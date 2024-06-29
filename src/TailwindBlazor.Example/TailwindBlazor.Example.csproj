@@ -4,6 +4,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <TailwindCssMinify>true</TailwindCssMinify>
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
