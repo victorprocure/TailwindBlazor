@@ -14,6 +14,7 @@ All default variables can be over written in your `csproj` file.
 - `<TailwindCssOutputFile>$(MSBuildProjectDirectory)/wwwroot/app.css</TailwindCssOutputFile>`
 - `<TailwindCssInputFile>$(MSBuildThisFileDirectory)../content/input.css</TailwindCssInputFile>`
 - `<TailwindCssMinify>false</TailwindCssMinify>`, Should TailwindCSS minify its out put. This is case sensitive only `true` or `false` valid
+- `<TailwindCssWorkingDirectory>$(MSBuildProjectDirectory)/../</TailwindCssWorkingDirectory>`, The directory to run the tailwind command from, we default to the level above current project directory in order to glob any components that may be in other project folders within the solution directory
 
 ### Example
 The repo can be cloned, the example project is just the default Blazor project with Bootstrap removed and all CSS replaced with Tailwind

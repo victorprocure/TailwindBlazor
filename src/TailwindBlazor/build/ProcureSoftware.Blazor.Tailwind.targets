@@ -9,6 +9,7 @@
     <TailwindCssOutputFile Condition=" '$(TailwindCssOutputFile)'=='' ">$(MSBuildProjectDirectory)/wwwroot/app.css</TailwindCssOutputFile>
     <TailwindCssInputFile Condition=" '$(TailwindCssInputFile)'=='' ">$(MSBuildThisFileDirectory)../content/input.css</TailwindCssInputFile>
     <TailwindCssMinify Condition=" '$(TailwindCssMinify)'=='' ">false</TailwindCssMinify>
+    <TailwindCssWorkingDirectory Condition=" '$(TailwindCssWorkingDirectory)'=='' ">$(MSBuildProjectDirectory)/../</TailwindCssWorkingDirectory>
 
     <TailwindCssMinifyCommand Condition=" '$(TailwindCssMinify)'=='true' ">--minify</TailwindCssMinifyCommand>
     <TailwindCssMinifyCommand Condition=" '$(TailwindCssMinify)'=='false' "></TailwindCssMinifyCommand>
@@ -28,6 +29,6 @@
   <Target Name="TailwindCssCompile" BeforeTargets="Build" AfterTargets="DebugEnsureNode">
     <Message Importance="high" Text="TailwindCSS: Compiling from config $(TailwindCssConfigFile)" />
 
-    <Exec WorkingDirectory="$(MSBuildProjectDirectory)/../" Command="&quot;$(NodeXCli)&quot; $(TailwindCssCli) -c &quot;$(TailwindCssConfigFile)&quot; -i &quot;$(TailwindCssInputFile)&quot; -o &quot;$(TailwindCssOutputFile)&quot; $(TailwindCssMinifyCommand)" />
+    <Exec WorkingDirectory="$(TailwindCssWorkingDirectory)" Command="&quot;$(NodeXCli)&quot; $(TailwindCssCli) -c &quot;$(TailwindCssConfigFile)&quot; -i &quot;$(TailwindCssInputFile)&quot; -o &quot;$(TailwindCssOutputFile)&quot; $(TailwindCssMinifyCommand)" />
   </Target>
 </Project>

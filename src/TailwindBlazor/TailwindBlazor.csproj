@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <Nullable>enable</Nullable>
     <Authors>Victor Procure</Authors>
     <Company>Procure Software Development</Company>
     <PackageTags>TailwindCSS;Blazor;ASP.NET</PackageTags>
     <Description>This project adds build targets to output tailwindcss trimmed css files based on your razor layouts in Blazor</Description>
     <PackageId>ProcureSoftware.Blazor.Tailwind</PackageId>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <IncludeSymbols>false</IncludeSymbols>
@@ -24,6 +24,7 @@
       <Pack>true</Pack>
       <PackagePath>build/any/any;build/any;build</PackagePath>
     </Content>
+    <None Include="../../README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>
