@@ -14,3 +14,6 @@ All default variables can be over written in your `csproj` file.
 - `<TailwindCssOutputFile>$(MSBuildProjectDirectory)/wwwroot/app.css</TailwindCssOutputFile>`
 - `<TailwindCssInputFile>$(MSBuildThisFileDirectory)../content/input.css</TailwindCssInputFile>`
 - `<TailwindCssMinify>false</TailwindCssMinify>`, Should TailwindCSS minify its out put. This is case sensitive only `true` or `false` valid
+
+### Example
+The repo can be cloned, the example project is just the default Blazor project with Bootstrap removed and all CSS replaced with Tailwind
