@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1C6FB8BE-DBA4-4E2B-A58F-90A4AEDDC9A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TailwindBlazor", "src\TailwindBlazor\TailwindBlazor.csproj", "{22EADC00-E45D-49C3-AB18-02DC6BD30025}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TailwindBlazor.Example", "src\TailwindBlazor.Example\TailwindBlazor.Example.csproj", "{B8A3FAAA-7081-48EC-8311-7E39627551FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22EADC00-E45D-49C3-AB18-02DC6BD30025}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22EADC00-E45D-49C3-AB18-02DC6BD30025}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22EADC00-E45D-49C3-AB18-02DC6BD30025}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22EADC00-E45D-49C3-AB18-02DC6BD30025}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8A3FAAA-7081-48EC-8311-7E39627551FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8A3FAAA-7081-48EC-8311-7E39627551FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8A3FAAA-7081-48EC-8311-7E39627551FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8A3FAAA-7081-48EC-8311-7E39627551FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{22EADC00-E45D-49C3-AB18-02DC6BD30025} = {1C6FB8BE-DBA4-4E2B-A58F-90A4AEDDC9A2}
+		{B8A3FAAA-7081-48EC-8311-7E39627551FE} = {1C6FB8BE-DBA4-4E2B-A58F-90A4AEDDC9A2}
+	EndGlobalSection
+EndGlobal

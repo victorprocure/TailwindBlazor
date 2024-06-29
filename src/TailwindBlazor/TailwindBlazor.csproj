@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Authors>Victor Procure</Authors>
+    <Company>Procure Software Development</Company>
+    <PackageTags>TailwindCSS;Blazor;ASP.NET</PackageTags>
+    <Description>This project adds build targets to output tailwindcss trimmed css files based on your razor layouts in Blazor</Description>
+    <PackageId>ProcureSoftware.Blazor.Tailwind</PackageId>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <IncludeSymbols>false</IncludeSymbols>
+    <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="content/**/*.*">
+      <Pack>true</Pack>
+      <PackagePath>content/any/any;content</PackagePath>
+    </Content>
+    <Content Include="build/**/*.*">
+      <Pack>true</Pack>
+      <PackagePath>build/any/any;build/any;build</PackagePath>
+    </Content>
+  </ItemGroup>
+
+</Project>

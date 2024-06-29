@@ -1,0 +1,50 @@
+﻿<div class="h-[3.5rem] bg-[rgba(0,0,0,0.4)] pl-4 relative flex flex-wrap items-center justify-between py-2">
+    <div class="flex items-center justify-between">
+        <a class="text-lg text-white py-1 mr-4 no-underline" href="">testing</a>
+    </div>
+</div>
+
+<button id="NavbarToggle" class="absolute top-2 right-4 flex items-center justify-center h-10 w-10 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black dark:focus:ring-white sm:hidden">
+    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+</button>
+
+<div class="sm:block sm:h-[calc(100vh-3.5rem)] sm:overflow-y-auto" onclick="document.querySelector('#NavbarToggle').click()">
+    <nav class="flex flex-col first:pt-4 last:pb-4">
+        <div class="text-base pb-2 px-4">
+            <NavLink class="@NavLinkClass" ActiveClass="@ActiveNavLinkClass" href="" Match="NavLinkMatch.All">
+                <div class="inline relative mr-3">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    </svg>
+                </div> Home
+            </NavLink>
+        </div>
+
+        <div class="text-base pb-2 px-4">
+            <NavLink class="@NavLinkClass" ActiveClass="@ActiveNavLinkClass" href="counter">
+                <div class="inline relative mr-3">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                </div> Counter
+            </NavLink>
+        </div>
+
+        <div class="text-base pb-2 px-4">
+            <NavLink class="@NavLinkClass" ActiveClass="@ActiveNavLinkClass" href="weather">
+                <div class="inline relative mr-3">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                    </svg>
+                </div> Weather
+            </NavLink>
+        </div>
+    </nav>
+</div>
+
+@code {
+    private const string NavLinkClass="text-white dark:text-slate-300 border-none rounded h-12 flex items-center w-full py-2 px-4 hover:bg-white/[0.1] transition-colors ease-in-out duration-150";
+    private const string ActiveNavLinkClass="bg-white/[0.37]";
+}
